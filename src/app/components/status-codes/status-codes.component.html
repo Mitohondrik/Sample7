@@ -1,0 +1,11 @@
+<h3>List of status codes:</h3>
+<div style="float: left">
+    <div *ngFor="let statusCode of statusCodes">
+        <div (click)="onStatusCodeNameClick(statusCode)">
+            {{statusCode?.code}}
+        </div>
+    </div>
+</div>
+<app-status-code [statusCode]="statusCodeChosen" (onDescriptionClickEvent)="onStatusCodeDescriptionClick($event)"></app-status-code>
+<h3>Description chosen:</h3>
+{{descriptionChosen}}

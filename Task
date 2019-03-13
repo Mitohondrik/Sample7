@@ -1,0 +1,4 @@
+Show status code information on hover.
+Add display of object type. Object type should be a separate component with @Input objectType: ObjectType property.
+Add some styles (Optional).
+

@@ -1,0 +1,41 @@
+<table>
+    <thead>
+    <tr>
+        <th>
+            Id
+        </th>
+        <th>
+            Code
+        </th>
+        <th>
+            Description
+        </th>
+        <th>
+            Create incidents
+        </th>
+        <th>
+            Issue grouping
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            {{statusCode.id}}
+        </td>
+        <td>
+            {{statusCode.code}}
+        </td>
+        <td (click)="onDescriptionClick(statusCode.description)">
+            {{statusCode.description}}
+        </td>
+        <td>
+            {{statusCode.createIncidents}}
+        </td>
+        <td>
+            {{statusCode.issueGrouping}}
+        </td>
+    </tr>
+    </tbody>
+</table>
+
